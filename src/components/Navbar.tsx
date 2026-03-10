@@ -26,9 +26,9 @@ const Navbar = () => {
             <sup className="text-[10px] text-accent ml-0.5">{item.num}</sup>
           </a>
         ))}
-        <a href="#contact" className="btn-primary text-xs py-3 px-6 flex items-center gap-2">
-          <span className="w-5 h-5 rounded-full border border-foreground/30 flex items-center justify-center">
-            <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4h6M5 2l2 2-2 2" stroke="currentColor" strokeWidth="1.5"/></svg>
+        <a href="#contact" className="btn-primary text-xs py-2 px-6 flex items-center gap-3">
+          <span className="btn-icon w-8 h-8">
+            <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </span>
           Get in touch
         </a>
@@ -51,7 +51,12 @@ const Navbar = () => {
                 {item.label}<sup className="text-accent text-xs ml-1">{item.num}</sup>
               </a>
             ))}
-            <a href="#contact" className="btn-primary text-xs py-3 px-6 mt-2 text-center">Get in touch</a>
+            <a href="#contact" className="btn-primary text-xs py-2 px-6 mt-2 text-center">
+              <span className="btn-icon w-8 h-8">
+                <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
+              Get in touch
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 
 @layer base {
   :root {
@@ -36,8 +36,8 @@
 
     --radius: 0px;
 
-    --font-heading: 'Syne', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Inter Display', 'Inter', sans-serif;
+    --font-body: 'Inter Display', 'Inter', sans-serif;
 
     --glow-cyan: 180 100% 50%;
     --surface-glass: 0 0% 100% / 0.05;
@@ -142,28 +142,59 @@
   }
 
   .btn-primary {
-    @apply relative inline-flex items-center gap-3 px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300;
+    @apply relative inline-flex items-center gap-4 pl-2 pr-8 py-2 text-sm font-semibold tracking-[0.02em] transition-all duration-500 cursor-pointer;
     font-family: var(--font-body);
+    background: hsl(0 0% 92%);
+    color: hsl(0 0% 8%);
+    border-radius: 9999px;
+  }
+
+  .btn-primary .btn-icon {
+    @apply w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shrink-0;
     background: hsl(var(--accent));
     color: hsl(var(--foreground));
   }
 
+  .btn-primary:hover .btn-icon {
+    transform: scale(1.1) rotate(45deg);
+  }
+
   .btn-primary:hover {
-    background: hsl(0 100% 55%);
-    transform: translateY(-1px);
+    background: hsl(0 0% 100%);
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px hsl(0 0% 0% / 0.12);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.97);
   }
 
   .btn-outline {
-    @apply relative inline-flex items-center gap-3 px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300;
+    @apply relative inline-flex items-center gap-4 pl-2 pr-8 py-2 text-sm font-semibold tracking-[0.02em] transition-all duration-500 cursor-pointer;
     font-family: var(--font-body);
     background: transparent;
     border: 1px solid hsl(var(--keyline));
     color: hsl(var(--foreground));
+    border-radius: 9999px;
+  }
+
+  .btn-outline .btn-icon {
+    @apply w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shrink-0;
+    background: hsl(var(--accent));
+    color: hsl(var(--foreground));
+  }
+
+  .btn-outline:hover .btn-icon {
+    transform: scale(1.1) rotate(45deg);
   }
 
   .btn-outline:hover {
-    border-color: hsl(var(--primary) / 0.5);
-    background: hsl(var(--primary) / 0.05);
+    border-color: hsl(var(--foreground) / 0.3);
+    transform: scale(1.03);
+  }
+
+  .btn-outline:active {
+    transform: scale(0.97);
   }
 
   .marquee-track {

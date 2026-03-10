@@ -41,7 +41,12 @@ const PricingSection = () => {
         <span className="section-label text-accent mb-2 block">Premium Plans</span>
         <h2 className="heading-section text-foreground mb-4">Feasible Plans.</h2>
         <p className="body-text max-w-lg mb-12">Transparent pricing tailored to your needs. Let's discuss your project and find a plan that works for you.</p>
-        <a href="#contact" className="btn-primary text-xs mb-12 inline-flex">Contact now</a>
+        <a href="#contact" className="btn-primary text-xs mb-12 inline-flex">
+          <span className="btn-icon">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </span>
+          Contact now
+        </a>
       </div>
 
       <div className="px-8 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-0 relative">
@@ -64,7 +69,12 @@ const PricingSection = () => {
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-2">{plan.name}</h3>
             <p className="body-text text-sm mb-8">{plan.desc}</p>
-            <a href="#contact" className="btn-primary text-xs mb-8 text-center justify-center">Subscribe Now</a>
+            <a href="#contact" className="btn-primary text-xs mb-8 text-center justify-center">
+              <span className="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
+              Subscribe Now
+            </a>
             <div>
               <p className="text-[10px] uppercase tracking-widest text-text-dimmer font-body mb-4">What's included</p>
               <ul className="space-y-3">

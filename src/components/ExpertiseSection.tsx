@@ -28,7 +28,12 @@ const ExpertiseSection = () => {
             <p className="body-text mb-8">
               As an expert in Framer, we specialize in turning your ideas into functional websites. Whether it's a custom template, I ensure every project meets your vision and exceeds expectations.
             </p>
-            <a href="#portfolio" className="btn-outline text-xs">View portfolio</a>
+            <a href="#portfolio" className="btn-outline text-xs">
+              <span className="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
+              View portfolio
+            </a>
 
             <div className="mt-10 flex items-center gap-3">
               <div className="flex -space-x-2">

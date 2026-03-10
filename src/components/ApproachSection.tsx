@@ -51,8 +51,8 @@ const ApproachSection = () => {
           </div>
 
           <a href="#contact" className="btn-primary mt-10 inline-flex">
-            <span className="w-5 h-5 rounded-full border border-foreground/30 flex items-center justify-center">
-              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4h6M5 2l2 2-2 2" stroke="currentColor" strokeWidth="1.5"/></svg>
+            <span className="btn-icon">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </span>
             Contact now
           </a>
