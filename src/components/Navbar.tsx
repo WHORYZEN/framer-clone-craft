@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-5 flex items-center justify-between"
       style={{ backdropFilter: "blur(12px)", background: "hsl(0 0% 6.7% / 0.8)" }}>
       <a href="#hero">
-        <img src={logo} alt="DigiFrenzy" className="h-10" />
+        <img src={logo} alt="DigiFrenzy" className="h-14" />
       </a>
 
       <div className="hidden md:flex items-center gap-10">
