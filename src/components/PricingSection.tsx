@@ -69,7 +69,12 @@ const PricingSection = () => {
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-2">{plan.name}</h3>
             <p className="body-text text-sm mb-8">{plan.desc}</p>
-            <a href="#contact" className="btn-primary text-xs mb-8 text-center justify-center">Subscribe Now</a>
+            <a href="#contact" className="btn-primary text-xs mb-8 text-center justify-center">
+              <span className="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
+              Subscribe Now
+            </a>
             <div>
               <p className="text-[10px] uppercase tracking-widest text-text-dimmer font-body mb-4">What's included</p>
               <ul className="space-y-3">
