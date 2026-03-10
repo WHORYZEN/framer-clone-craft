@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo_digifrenzy_white.png";
 
 const navItems = [
   { label: "Home", num: "01", href: "#hero" },
