@@ -1,3 +1,5 @@
+import logo from "@/assets/logo_digifrenzy_white.png";
+
 const Footer = () => {
   return (
     <footer className="relative z-10 border-t border-keyline px-8 md:px-12 lg:px-16 py-8">
