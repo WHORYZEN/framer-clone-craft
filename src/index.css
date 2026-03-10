@@ -36,8 +36,8 @@
 
     --radius: 0px;
 
-    --font-heading: 'Syne', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Inter Display', 'Inter', sans-serif;
+    --font-body: 'Inter Display', 'Inter', sans-serif;
 
     --glow-cyan: 180 100% 50%;
     --surface-glass: 0 0% 100% / 0.05;
