@@ -27,7 +27,9 @@ const PortfolioSection = () => {
               Explore a collection of high-quality, innovative designs crafted to elevate brands and captivate audiences.
             </p>
             <a href="#" className="btn-outline text-xs">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 5h8M6 2l3 3-3 3" stroke="currentColor" strokeWidth="1.5"/></svg>
+              <span className="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
               View portfolio
             </a>
           </div>

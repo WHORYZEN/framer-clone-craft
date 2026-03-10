@@ -26,7 +26,12 @@ const PhotographySection = () => {
             <p className="body-text mb-6">
               Capturing moments, creating memories. Through my lens, I capture stunning visuals that bring your brand to life.
             </p>
-            <a href="#contact" className="btn-outline text-xs">Book an appointment</a>
+            <a href="#contact" className="btn-outline text-xs">
+              <span className="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
+              Book an appointment
+            </a>
           </div>
         </div>
       </div>

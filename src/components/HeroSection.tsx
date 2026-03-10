@@ -47,7 +47,7 @@ const HeroSection = () => {
             transition={{ delay: 0.8, duration: 0.8 }}>
             <p className="section-tag mb-3">©2025</p>
             <h1 className="heading-display text-foreground">
-              Clivelle<span className="text-accent">*</span>
+              DigiFrenzy<span className="text-accent">*</span>
             </h1>
           </motion.div>
         </div>
