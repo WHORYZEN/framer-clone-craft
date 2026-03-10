@@ -25,7 +25,12 @@ const ServicesSection = () => {
           <div className="flex flex-col gap-2">
             <span className="text-xs uppercase tracking-widest text-accent font-body">Convert More, Grow Faster</span>
             <span className="text-xs uppercase tracking-widest text-text-dim font-body">Future-Proof & Scalable</span>
-            <a href="#" className="btn-outline text-xs mt-2">View about</a>
+            <a href="#" className="btn-outline text-xs mt-2">
+              <span className="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
+              View about
+            </a>
           </div>
         </div>
       </div>

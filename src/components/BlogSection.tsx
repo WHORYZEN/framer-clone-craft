@@ -25,7 +25,12 @@ const BlogSection = () => {
             <p className="body-text mb-6">
               Explore my blog for design tips, industry insights, and creative inspiration.
             </p>
-            <a href="#" className="btn-outline text-xs">View articles</a>
+            <a href="#" className="btn-outline text-xs">
+              <span className="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </span>
+              View articles
+            </a>
           </div>
         </div>
       </div>

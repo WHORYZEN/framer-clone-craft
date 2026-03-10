@@ -32,7 +32,7 @@ const ContactSection = () => {
             </span>
           </div>
 
-          <a href="mailto:hello@clivelle.com" className="btn-primary text-xs inline-flex">
+          <a href="mailto:hello@digifrenzy.com" className="btn-primary text-xs inline-flex">
             <span className="btn-icon">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </span>
