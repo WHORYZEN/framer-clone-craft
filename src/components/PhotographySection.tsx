@@ -19,8 +19,8 @@ const PhotographySection = () => {
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <span className="section-label text-accent mb-2 block">Photography</span>
-            <h2 className="heading-section text-foreground">Every Pixel Clicked.</h2>
+            <span className="section-label text-accent mb-2 block">Creative Visuals</span>
+            <h2 className="heading-section text-foreground">Every Pixel Crafted.</h2>
           </div>
           <div className="max-w-md">
             <p className="body-text mb-6">
