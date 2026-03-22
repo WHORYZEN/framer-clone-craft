@@ -56,12 +56,19 @@ const Navbar = () => {
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 right-0 p-6 flex flex-col gap-4 md:hidden"
             style={{ background: "hsl(0 0% 6.7% / 0.95)", backdropFilter: "blur(16px)" }}>
-            {navItems.map((item) => (
-              <a key={item.label} href={item.href} onClick={() => setMobileOpen(false)}
-                className="text-lg font-heading font-semibold text-foreground/80 hover:text-foreground">
-                {item.label}<sup className="text-accent text-xs ml-1">{item.num}</sup>
-              </a>
-            ))}
+            {navItems.map((item) =>
+              item.isRoute ? (
+                <Link key={item.label} to={item.href} onClick={() => setMobileOpen(false)}
+                  className="text-lg font-heading font-semibold text-foreground/80 hover:text-foreground">
+                  {item.label}<sup className="text-accent text-xs ml-1">{item.num}</sup>
+                </Link>
+              ) : (
+                <a key={item.label} href={item.href} onClick={() => setMobileOpen(false)}
+                  className="text-lg font-heading font-semibold text-foreground/80 hover:text-foreground">
+                  {item.label}<sup className="text-accent text-xs ml-1">{item.num}</sup>
+                </a>
+              )
+            )}
             <a href="#contact" className="btn-primary text-xs py-2 px-6 mt-2 text-center">
               <span className="btn-icon w-8 h-8">
                 <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
