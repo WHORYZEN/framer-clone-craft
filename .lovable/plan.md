@@ -1,17 +1,14 @@
 
 
-## Plan: Update FAQ Content + Add FAQ to Services & Pricing Pages
+## Fix: Scroll to top on page navigation
+
+**Problem**: When clicking "View all services" or navbar links to `/services` and `/pricing`, React Router changes the route but preserves scroll position, landing users at the bottom of the new page.
+
+**Solution**: Create a `ScrollToTop` component that listens for route changes and scrolls to top, then add it inside the `BrowserRouter` in `App.tsx`.
 
 ### Changes
 
-1. **Update `FAQSection.tsx`** — Replace the 8 existing FAQ items with the 8 new DigiFrenzy-specific questions and answers provided by the user. Keep the exact same component structure, styling, and animations.
+1. **Create `src/components/ScrollToTop.tsx`** — A small component using `useEffect` + `useLocation` from react-router-dom that calls `window.scrollTo(0, 0)` on every pathname change.
 
-2. **Add FAQSection to `Services.tsx`** — Import and add `<FAQSection />` between the CTA section and Footer.
-
-3. **Add FAQSection to `Pricing.tsx`** — Import and add `<FAQSection />` between the CTA section and Footer.
-
-### Technical details
-- No new components needed — reuse the existing `FAQSection` component as-is
-- FAQ data update is a simple array replacement (same `{ q, a }` shape)
-- The FAQ section already has its own section padding and styling, so it drops in cleanly before `<Footer />`
+2. **Update `src/App.tsx`** — Add `<ScrollToTop />` inside `<BrowserRouter>` before `<Routes>`.
 
