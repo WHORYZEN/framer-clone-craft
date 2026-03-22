@@ -23,7 +23,7 @@ const BlogSection = () => {
           </div>
           <div className="max-w-md">
             <p className="body-text mb-6">
-              Explore my blog for design tips, industry insights, and creative inspiration.
+              Explore our blog for design tips, industry insights, and creative inspiration.
             </p>
             <a href="#" className="btn-outline text-xs">
               <span className="btn-icon">

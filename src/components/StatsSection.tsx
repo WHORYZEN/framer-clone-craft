@@ -32,9 +32,9 @@ const Counter = ({ target, suffix = "+" }: { target: number; suffix?: string }) 
 };
 
 const stats = [
-  { value: 10, suffix: "+", label: "Years Experience", desc: "In the web design industry field." },
-  { value: 230, suffix: "+", label: "Projects Done", desc: "Around worldwide in last five years." },
-  { value: 99, suffix: "%", label: "Satisfied Clients", desc: "With a great experience and results." },
+  { value: 10, suffix: "+", label: "Years in the Industry", desc: "Delivering digital excellence worldwide." },
+  { value: 230, suffix: "+", label: "Projects Delivered", desc: "For clients across industries globally." },
+  { value: 99, suffix: "%", label: "Client Satisfaction", desc: "Consistently exceeding expectations." },
 ];
 
 const StatsSection = () => {
@@ -45,7 +45,7 @@ const StatsSection = () => {
         className="max-w-3xl mb-16">
         <span className="section-label mb-4 block">Stats & Facts</span>
         <p className="font-heading text-xl md:text-2xl font-semibold text-foreground leading-relaxed">
-          I take pride in creating solutions that are not only visually stunning® but also highly functional. Every number tells a story.
+          We take pride in delivering solutions that are not only visually stunning® but also highly functional. Every number tells a story of our commitment to excellence.
         </p>
       </motion.div>
 

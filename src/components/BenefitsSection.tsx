@@ -5,7 +5,7 @@ const BenefitsSection = () => {
     <section className="relative z-10 py-20 md:py-32">
       <div className="px-8 md:px-12 lg:px-16">
         <div className="flex items-center gap-4 mb-2">
-          <span className="section-label">Benefits of Hiring Me</span>
+          <span className="section-label">Why Choose DigiFrenzy</span>
           <span className="section-tag">(CQ® — 06)</span>
         </div>
         <span className="section-tag mb-12 block">©2025</span>
@@ -44,7 +44,7 @@ const BenefitsSection = () => {
           viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
           <p className="text-[10px] uppercase tracking-widest text-text-dimmer font-body mb-2">FULL TIME SUPPORT</p>
           <div className="font-heading text-6xl md:text-8xl font-extrabold text-foreground">24/6</div>
-          <p className="body-text mt-4">I have a custom application for 24/6 support and you will get update anytime.</p>
+          <p className="body-text mt-4">Our dedicated team provides 24/6 support so you're never left waiting. Get updates anytime.</p>
         </motion.div>
 
         {/* Card 4 - Mobile */}

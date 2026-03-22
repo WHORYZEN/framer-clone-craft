@@ -62,11 +62,11 @@ const HeroSection = () => {
             transition={{ delay: 0.4, duration: 0.8 }}>
             <p className="text-sm uppercase tracking-[0.2em] mb-6 font-body"
               style={{ color: "hsl(0 0% 0% / 0.5)" }}>
-              Hey, Just An Intro
+              Welcome to DigiFrenzy
             </p>
             <h2 className="font-heading text-2xl md:text-3xl font-bold leading-snug mb-8"
               style={{ color: "hsl(0 0% 0% / 0.9)" }}>
-              A digital designer based in Los Angeles, passionate about creating immersive visual experiences.®
+              We are a full-service digital agency crafting bold brands, high-performance websites, and data-driven marketing strategies.®
             </h2>
             <a href="#contact" className="btn-primary inline-flex w-fit">
               <BtnIcon />
@@ -81,17 +81,17 @@ const HeroSection = () => {
         <motion.div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-keyline"
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <h3 className="heading-sub text-foreground mb-4">Bringing Ideas to Life</h3>
+          <h3 className="heading-sub text-foreground mb-4">Transforming Brands Digitally</h3>
           <p className="body-text">
-            I specialize in transforming concepts into captivating 3D visuals. Whether it's product renderings, or immersive environments, my portfolio is designed to tell a story.
+            We specialize in transforming brands into digital powerhouses. From stunning websites to data-driven marketing campaigns, our team is built to deliver results that move the needle.
           </p>
         </motion.div>
         <motion.div className="p-8 md:p-12"
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }}>
-          <h3 className="heading-sub text-foreground mb-4">Collaborate with Me</h3>
+          <h3 className="heading-sub text-foreground mb-4">Partner with Us</h3>
           <p className="body-text">
-            Let's create something extraordinary together! Whether you're looking to visualize a product, animate a concept, or build an interactive experience.
+            Let's create something extraordinary together! Whether you need a brand overhaul, a high-converting website, or a full-scale marketing strategy — our team has you covered.
           </p>
         </motion.div>
       </div>

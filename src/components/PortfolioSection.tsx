@@ -24,7 +24,7 @@ const PortfolioSection = () => {
           </div>
           <div className="max-w-md">
             <p className="body-text mb-6">
-              Explore a collection of high-quality, innovative designs crafted to elevate brands and captivate audiences.
+              Showcasing our best client work — bold designs crafted to elevate brands and captivate audiences.
             </p>
             <a href="#" className="btn-outline text-xs">
               <span className="btn-icon">
@@ -76,7 +76,7 @@ const PortfolioSection = () => {
 };
 
 const LogoMarqueeInline = () => {
-  const items = ["Also work with these international partners:"];
+  const items = ["Trusted by brands worldwide:"];
   return (
     <div className="mt-10 py-4 border-t border-b border-keyline px-8 md:px-12">
       <p className="section-tag text-center">{items[0]}</p>
