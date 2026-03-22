@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const testimonials = [
-  { img: "/images/testimonial-1.jpg", text: "With Clive's user-friendly CRM, our sales team can now work smarter, not harder. Deal tracking, reports, traffic - it's all automated and accessible in one place.", name: "Eddie Brock", role: "CEO", company: "Royal Kingdope" },
-  { img: "/images/testimonial-2.jpg", text: "I was amazed by how intuitive and user-friendly everything felt. It's clear their designers obsess over every pixel, every transition, to create experiences that delight.", name: "John Fitzgerald", role: "Manager", company: "Microsoft Solutions" },
-  { img: "/images/testimonial-3.jpg", text: "I hired Clive to redesign my company's website. The process was smooth and easy. They listened to all my needs and delivered a site that exceeded my ideas.", name: "Ellie Sattler", role: "Designer", company: "Nvidia Graphics" },
-  { img: "/images/testimonial-4.jpg", text: "We've seen increase in site traffic, lead generation, and sales. I can't recommend Clive enough. He truly transformed our website and design into a masterpiece!", name: "Kate McCallister", role: "Home Advisor", company: "Apple Inc." },
+  { img: "/images/testimonial-1.jpg", text: "With DigiFrenzy's user-friendly approach, our sales team can now work smarter, not harder. Strategy, reports, traffic — it's all streamlined and accessible in one place.", name: "Eddie Brock", role: "CEO", company: "Royal Kingdope" },
+  { img: "/images/testimonial-2.jpg", text: "I was amazed by how intuitive and results-driven their process was. It's clear the DigiFrenzy team obsesses over every detail to create experiences that delight.", name: "John Fitzgerald", role: "Manager", company: "Microsoft Solutions" },
+  { img: "/images/testimonial-3.jpg", text: "We hired DigiFrenzy to redesign our company's website. The process was smooth and collaborative. They listened to all our needs and delivered a site that exceeded expectations.", name: "Ellie Sattler", role: "Designer", company: "Nvidia Graphics" },
+  { img: "/images/testimonial-4.jpg", text: "We've seen a massive increase in site traffic, lead generation, and sales. DigiFrenzy truly transformed our digital presence into a masterpiece!", name: "Kate McCallister", role: "Home Advisor", company: "Apple Inc." },
 ];
 
 const TestimonialsSection = () => {
