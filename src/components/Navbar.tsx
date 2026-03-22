@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo_digifrenzy_white.png";
 
 const navItems = [
-  { label: "Home", num: "01", href: "#hero" },
-  { label: "About", num: "02", href: "#approach" },
-  { label: "Work", num: "03", href: "#portfolio" },
-  { label: "Blog", num: "04", href: "#blog" },
+  { label: "Home", num: "01", href: "/#hero" },
+  { label: "About", num: "02", href: "/#approach" },
+  { label: "Services", num: "03", href: "/services", isRoute: true },
+  { label: "Work", num: "04", href: "/#portfolio" },
+  { label: "Blog", num: "05", href: "/#blog" },
 ];
 
 const Navbar = () => {
@@ -20,13 +22,21 @@ const Navbar = () => {
       </a>
 
       <div className="hidden md:flex items-center gap-10">
-        {navItems.map((item) => (
-          <a key={item.label} href={item.href}
-            className="group relative text-sm font-medium tracking-wide text-foreground/70 hover:text-foreground transition-colors duration-300">
-            {item.label}
-            <sup className="text-[10px] text-accent ml-0.5">{item.num}</sup>
-          </a>
-        ))}
+        {navItems.map((item) =>
+          item.isRoute ? (
+            <Link key={item.label} to={item.href}
+              className="group relative text-sm font-medium tracking-wide text-foreground/70 hover:text-foreground transition-colors duration-300">
+              {item.label}
+              <sup className="text-[10px] text-accent ml-0.5">{item.num}</sup>
+            </Link>
+          ) : (
+            <a key={item.label} href={item.href}
+              className="group relative text-sm font-medium tracking-wide text-foreground/70 hover:text-foreground transition-colors duration-300">
+              {item.label}
+              <sup className="text-[10px] text-accent ml-0.5">{item.num}</sup>
+            </a>
+          )
+        )}
         <a href="#contact" className="btn-primary text-xs py-2 px-6 flex items-center gap-3">
           <span className="btn-icon w-8 h-8">
             <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -46,12 +56,19 @@ const Navbar = () => {
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 right-0 p-6 flex flex-col gap-4 md:hidden"
             style={{ background: "hsl(0 0% 6.7% / 0.95)", backdropFilter: "blur(16px)" }}>
-            {navItems.map((item) => (
-              <a key={item.label} href={item.href} onClick={() => setMobileOpen(false)}
-                className="text-lg font-heading font-semibold text-foreground/80 hover:text-foreground">
-                {item.label}<sup className="text-accent text-xs ml-1">{item.num}</sup>
-              </a>
-            ))}
+            {navItems.map((item) =>
+              item.isRoute ? (
+                <Link key={item.label} to={item.href} onClick={() => setMobileOpen(false)}
+                  className="text-lg font-heading font-semibold text-foreground/80 hover:text-foreground">
+                  {item.label}<sup className="text-accent text-xs ml-1">{item.num}</sup>
+                </Link>
+              ) : (
+                <a key={item.label} href={item.href} onClick={() => setMobileOpen(false)}
+                  className="text-lg font-heading font-semibold text-foreground/80 hover:text-foreground">
+                  {item.label}<sup className="text-accent text-xs ml-1">{item.num}</sup>
+                </a>
+              )
+            )}
             <a href="#contact" className="btn-primary text-xs py-2 px-6 mt-2 text-center">
               <span className="btn-icon w-8 h-8">
                 <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
