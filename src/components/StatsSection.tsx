@@ -32,9 +32,9 @@ const Counter = ({ target, suffix = "+" }: { target: number; suffix?: string }) 
 };
 
 const stats = [
-  { value: 10, suffix: "+", label: "Years Experience", desc: "In the web design industry field." },
-  { value: 230, suffix: "+", label: "Projects Done", desc: "Around worldwide in last five years." },
-  { value: 99, suffix: "%", label: "Satisfied Clients", desc: "With a great experience and results." },
+  { value: 10, suffix: "+", label: "Years in the Industry", desc: "Delivering digital excellence worldwide." },
+  { value: 230, suffix: "+", label: "Projects Delivered", desc: "For clients across industries globally." },
+  { value: 99, suffix: "%", label: "Client Satisfaction", desc: "Consistently exceeding expectations." },
 ];
 
 const StatsSection = () => {
