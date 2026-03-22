@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo_digifrenzy_white.png";
 
 const navItems = [
-  { label: "Home", num: "01", href: "#hero" },
-  { label: "About", num: "02", href: "#approach" },
-  { label: "Work", num: "03", href: "#portfolio" },
-  { label: "Blog", num: "04", href: "#blog" },
+  { label: "Home", num: "01", href: "/#hero" },
+  { label: "About", num: "02", href: "/#approach" },
+  { label: "Services", num: "03", href: "/services", isRoute: true },
+  { label: "Work", num: "04", href: "/#portfolio" },
+  { label: "Blog", num: "05", href: "/#blog" },
 ];
 
 const Navbar = () => {
