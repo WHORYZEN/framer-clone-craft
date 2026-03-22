@@ -24,7 +24,7 @@ const PhotographySection = () => {
           </div>
           <div className="max-w-md">
             <p className="body-text mb-6">
-              Capturing moments, creating memories. Through my lens, I capture stunning visuals that bring your brand to life.
+              Our creative team produces stunning visuals that bring your brand to life and captivate your audience.
             </p>
             <a href="#contact" className="btn-outline text-xs">
               <span className="btn-icon">
