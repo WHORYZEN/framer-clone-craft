@@ -62,11 +62,11 @@ const HeroSection = () => {
             transition={{ delay: 0.4, duration: 0.8 }}>
             <p className="text-sm uppercase tracking-[0.2em] mb-6 font-body"
               style={{ color: "hsl(0 0% 0% / 0.5)" }}>
-              Hey, Just An Intro
+              Welcome to DigiFrenzy
             </p>
             <h2 className="font-heading text-2xl md:text-3xl font-bold leading-snug mb-8"
               style={{ color: "hsl(0 0% 0% / 0.9)" }}>
-              A digital designer based in Los Angeles, passionate about creating immersive visual experiences.®
+              We are a full-service digital agency crafting bold brands, high-performance websites, and data-driven marketing strategies.®
             </h2>
             <a href="#contact" className="btn-primary inline-flex w-fit">
               <BtnIcon />
