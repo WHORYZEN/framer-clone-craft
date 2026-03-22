@@ -42,7 +42,7 @@ const ExpertiseSection = () => {
                     style={{ borderColor: "hsl(var(--background))" }} loading="lazy" />
                 ))}
               </div>
-              <span className="text-xs text-text-dim font-body">299+ People Rated</span>
+              <span className="text-xs text-text-dim font-body">299+ Clients Served</span>
             </div>
           </motion.div>
         </div>

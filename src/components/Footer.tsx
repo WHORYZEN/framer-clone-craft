@@ -9,7 +9,7 @@ const Footer = () => {
         </a>
         <p className="text-xs text-text-dimmer font-body">© 2025 DigiFrenzy. All rights reserved.</p>
         <div className="flex items-center gap-6">
-          {["Twitter", "Dribbble", "LinkedIn"].map(s => (
+          {["Twitter", "Instagram", "LinkedIn"].map(s => (
             <a key={s} href="#" className="text-xs text-text-dim hover:text-foreground transition-colors duration-300 font-body uppercase tracking-widest">
               {s}
             </a>

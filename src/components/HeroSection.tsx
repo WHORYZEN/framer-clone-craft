@@ -81,17 +81,17 @@ const HeroSection = () => {
         <motion.div className="p-8 md:p-12 border-b md:border-b-0 md:border-r border-keyline"
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <h3 className="heading-sub text-foreground mb-4">Bringing Ideas to Life</h3>
+          <h3 className="heading-sub text-foreground mb-4">Transforming Brands Digitally</h3>
           <p className="body-text">
-            I specialize in transforming concepts into captivating 3D visuals. Whether it's product renderings, or immersive environments, my portfolio is designed to tell a story.
+            We specialize in transforming brands into digital powerhouses. From stunning websites to data-driven marketing campaigns, our team is built to deliver results that move the needle.
           </p>
         </motion.div>
         <motion.div className="p-8 md:p-12"
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }}>
-          <h3 className="heading-sub text-foreground mb-4">Collaborate with Me</h3>
+          <h3 className="heading-sub text-foreground mb-4">Partner with Us</h3>
           <p className="body-text">
-            Let's create something extraordinary together! Whether you're looking to visualize a product, animate a concept, or build an interactive experience.
+            Let's create something extraordinary together! Whether you need a brand overhaul, a high-converting website, or a full-scale marketing strategy — our team has you covered.
           </p>
         </motion.div>
       </div>

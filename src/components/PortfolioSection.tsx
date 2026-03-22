@@ -76,7 +76,7 @@ const PortfolioSection = () => {
 };
 
 const LogoMarqueeInline = () => {
-  const items = ["Also work with these international partners:"];
+  const items = ["Trusted by brands worldwide:"];
   return (
     <div className="mt-10 py-4 border-t border-b border-keyline px-8 md:px-12">
       <p className="section-tag text-center">{items[0]}</p>

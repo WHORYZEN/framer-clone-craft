@@ -44,7 +44,7 @@ const BenefitsSection = () => {
           viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
           <p className="text-[10px] uppercase tracking-widest text-text-dimmer font-body mb-2">FULL TIME SUPPORT</p>
           <div className="font-heading text-6xl md:text-8xl font-extrabold text-foreground">24/6</div>
-          <p className="body-text mt-4">I have a custom application for 24/6 support and you will get update anytime.</p>
+          <p className="body-text mt-4">Our dedicated team provides 24/6 support so you're never left waiting. Get updates anytime.</p>
         </motion.div>
 
         {/* Card 4 - Mobile */}
