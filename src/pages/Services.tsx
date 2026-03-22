@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 const services = [
@@ -142,6 +143,8 @@ const Services = () => {
           </motion.div>
         </section>
       </main>
+
+      <FAQSection />
 
       <Footer />
     </div>

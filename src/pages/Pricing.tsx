@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 const plans = [
@@ -165,6 +166,8 @@ const Pricing = () => {
           </motion.div>
         </section>
       </main>
+
+      <FAQSection />
 
       <Footer />
     </div>

@@ -2,14 +2,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const faqs = [
-  { q: "What does a project look like?", a: "Each project starts with discovery, moves through design and development, and ends with launch and support. We tailor the process to fit your specific needs and timeline." },
-  { q: "How is the pricing structure?", a: "We offer transparent, project-based pricing. Our plans are designed to give you maximum value whether you're a startup or enterprise." },
-  { q: "Are all projects fixed scope?", a: "We offer both fixed-scope and retainer-based engagements. We'll recommend the best approach based on your project requirements." },
-  { q: "What is the ROI?", a: "Our clients typically see significant improvements in engagement, conversion rates, and brand perception within the first few months of launch." },
-  { q: "How do we measure success?", a: "We define clear KPIs at the start of each project and track progress through analytics, user feedback, and business metrics." },
-  { q: "What do I need to get started?", a: "Just reach out! We'll schedule a discovery call to understand your vision, timeline, and budget." },
-  { q: "How easy is it to edit for beginners?", a: "Our solutions are built with user-friendliness in mind. We provide documentation and training to ensure you can manage content independently." },
-  { q: "Do I need to know how to code?", a: "Not at all! Our designs are built on platforms that allow non-technical users to make updates easily." },
+  { q: "What does a project with DigiFrenzy look like?", a: "We start with a discovery call to understand your goals, then build a custom strategy, execute with our creative team, and deliver measurable results — all within clear timelines." },
+  { q: "How is your pricing structured?", a: "We offer flexible monthly retainer plans and one-time project pricing. Every package is tailored to your specific business needs and goals." },
+  { q: "Do you work with fixed-scope projects?", a: "Yes. We offer both fixed-scope and ongoing retainer models depending on what works best for your brand." },
+  { q: "What kind of ROI can I expect?", a: "Our clients typically see a 3–5x return on their marketing investment within the first 6 months, depending on industry and strategy." },
+  { q: "How do you measure success?", a: "Through real KPIs — traffic growth, lead generation, conversion rates, ROAS, and revenue. No vanity metrics." },
+  { q: "What do I need to get started?", a: "Just a 30-minute discovery call. We handle everything from strategy to execution." },
+  { q: "Do I need to know anything about marketing?", a: "Not at all. We make the complex simple and keep you informed at every step without overwhelming you." },
+  { q: "Can I pause or cancel my plan?", a: "Yes. All our plans are flexible — pause or cancel anytime with 30 days notice." },
 ];
 
 const FAQSection = () => {
