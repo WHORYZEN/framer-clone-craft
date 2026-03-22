@@ -22,13 +22,21 @@ const Navbar = () => {
       </a>
 
       <div className="hidden md:flex items-center gap-10">
-        {navItems.map((item) => (
-          <a key={item.label} href={item.href}
-            className="group relative text-sm font-medium tracking-wide text-foreground/70 hover:text-foreground transition-colors duration-300">
-            {item.label}
-            <sup className="text-[10px] text-accent ml-0.5">{item.num}</sup>
-          </a>
-        ))}
+        {navItems.map((item) =>
+          item.isRoute ? (
+            <Link key={item.label} to={item.href}
+              className="group relative text-sm font-medium tracking-wide text-foreground/70 hover:text-foreground transition-colors duration-300">
+              {item.label}
+              <sup className="text-[10px] text-accent ml-0.5">{item.num}</sup>
+            </Link>
+          ) : (
+            <a key={item.label} href={item.href}
+              className="group relative text-sm font-medium tracking-wide text-foreground/70 hover:text-foreground transition-colors duration-300">
+              {item.label}
+              <sup className="text-[10px] text-accent ml-0.5">{item.num}</sup>
+            </a>
+          )
+        )}
         <a href="#contact" className="btn-primary text-xs py-2 px-6 flex items-center gap-3">
           <span className="btn-icon w-8 h-8">
             <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
