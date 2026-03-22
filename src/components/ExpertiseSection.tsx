@@ -23,10 +23,10 @@ const ExpertiseSection = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="section-label text-accent mb-4 block">Website Expert</span>
-            <h2 className="heading-section text-foreground mb-6">Expertise in Framer Templates.</h2>
+            <h2 className="heading-section text-foreground mb-6">Expertise in Modern Web Development.</h2>
             <h3 className="heading-sub text-foreground mb-4">Bringing Your Ideas to Life®</h3>
             <p className="body-text mb-8">
-              As an expert in Framer, we specialize in turning your ideas into functional websites. Whether it's a custom template, I ensure every project meets your vision and exceeds expectations.
+              Our team specializes in turning your ideas into functional, high-performance websites. Whether it's a custom build or a template, we ensure every project meets your vision and exceeds expectations.
             </p>
             <a href="#portfolio" className="btn-outline text-xs">
               <span className="btn-icon">
