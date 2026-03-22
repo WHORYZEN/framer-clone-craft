@@ -12,7 +12,7 @@ const PhotographySection = () => {
     <section className="relative z-10 py-20 md:py-32">
       <div className="px-8 md:px-12 lg:px-16 mb-12">
         <div className="flex items-center gap-4 mb-2">
-          <span className="section-label">Shots By Me</span>
+          <span className="section-label">Visual Showcase</span>
           <span className="section-tag">(CQ® — 08)</span>
         </div>
         <span className="section-tag mb-8 block">©2025</span>
