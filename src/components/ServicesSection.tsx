@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const services = [
-  { img: "/images/service-glasses.png", title: "Professional Videography", tag: "Photography" },
-  { img: "/images/service-coffee.png", title: "Product Designing", tag: "Marketing" },
-  { img: "/images/service-cream.png", title: "Framer Development", tag: "Development" },
-  { img: "/images/service-bottle.png", title: "3D Rendering", tag: "Modeling" },
+  { img: "/images/service-glasses.png", title: "Social Media Marketing", tag: "Marketing" },
+  { img: "/images/service-coffee.png", title: "SEO & Performance", tag: "Optimization" },
+  { img: "/images/service-cream.png", title: "Website Development", tag: "Development" },
+  { img: "/images/service-bottle.png", title: "3D Animation & Branding", tag: "Branding" },
 ];
 
 const ServicesSection = () => {
@@ -13,24 +14,24 @@ const ServicesSection = () => {
       <div className="px-8 md:px-12 lg:px-16">
         <div className="flex items-center gap-4 mb-2">
           <span className="section-label">Premium Services</span>
-          <span className="section-tag">(CQ® — 05)</span>
+          <span className="section-tag">(DF® — 05)</span>
         </div>
         <span className="section-tag mb-8 block">©2025</span>
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-4">
           <div>
-            <h2 className="heading-section text-foreground">Pro Services®</h2>
-            <p className="body-text mt-4 max-w-lg">From web design to branding, I bring your vision to life with precision and creativity</p>
+            <h2 className="heading-section text-foreground">Our Services®</h2>
+            <p className="body-text mt-4 max-w-lg">From social media to 3D branding, we bring your digital vision to life with precision and creativity</p>
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-xs uppercase tracking-widest text-accent font-body">Convert More, Grow Faster</span>
             <span className="text-xs uppercase tracking-widest text-text-dim font-body">Future-Proof & Scalable</span>
-            <a href="#" className="btn-outline text-xs mt-2">
+            <Link to="/services" className="btn-outline text-xs mt-2">
               <span className="btn-icon">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </span>
-              View about
-            </a>
+              View all services
+            </Link>
           </div>
         </div>
       </div>
