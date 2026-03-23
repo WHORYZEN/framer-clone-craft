@@ -147,6 +147,8 @@ const Services = () => {
 
       <FAQSection />
 
+      <ContactSection />
+
       <Footer />
     </div>
   );
