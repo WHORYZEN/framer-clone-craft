@@ -133,7 +133,7 @@ const Services = () => {
             <p className="body-text max-w-lg mx-auto mb-8">
               Let's build something extraordinary together. Tell us about your project and we'll craft the perfect solution.
             </p>
-            <a href="/#contact" className="btn-primary text-xs inline-flex">
+            <a href="#contact" className="btn-primary text-xs inline-flex">
               <span className="btn-icon">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
