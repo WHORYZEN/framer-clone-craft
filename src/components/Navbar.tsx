@@ -38,7 +38,7 @@ const Navbar = () => {
             </a>
           )
         )}
-        <a href="#contact" className="btn-primary text-xs py-2 px-6 flex items-center gap-3">
+        <a href="/#contact" className="btn-primary text-xs py-2 px-6 flex items-center gap-3">
           <span className="btn-icon w-8 h-8">
             <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </span>
