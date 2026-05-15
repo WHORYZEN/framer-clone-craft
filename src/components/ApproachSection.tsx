@@ -83,7 +83,7 @@ const ApproachSection = () => {
         <motion.div className="relative min-h-[500px] lg:min-h-full overflow-hidden"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
           viewport={{ once: true }} transition={{ duration: 1 }}>
-          <img src="https://framerusercontent.com/images/rPovAy2J6Q4sllGf3hH7aT3fCk.jpg" alt="Approach" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+           <img src="/contact-hero.jpg" alt="Approach" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
         </motion.div>
       </div>
     </section>
