@@ -17,7 +17,7 @@ const BenefitsSection = () => {
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <div className="relative aspect-[16/9] overflow-hidden">
-            <img src="/images/benefits-car.png" alt="Speed" className="w-full h-full object-cover" loading="lazy" />
+            <img src="https://framerusercontent.com/images/tTnUarcDGbJHyHnu6aahGScqPHw.jpg" alt="Speed" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="p-8">
             <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">
@@ -35,7 +35,7 @@ const BenefitsSection = () => {
             <p className="text-[10px] uppercase tracking-widest text-accent font-body mb-4">FROM 0 TO 100 IN ONE SMALL STEP</p>
             <h3 className="font-heading text-lg font-bold text-foreground">All in one platform</h3>
           </div>
-          <img src="/images/benefits-man.png" alt="Platform" className="w-full mt-6 object-contain" loading="lazy" />
+          <img src="https://framerusercontent.com/images/VJa2hrCQ3Nx82HOqQCvk8NvidY.jpg" alt="Platform" className="w-full mt-6 object-contain" loading="lazy" />
         </motion.div>
 
         {/* Card 3 - Support */}
@@ -51,7 +51,7 @@ const BenefitsSection = () => {
         <motion.div className="glass-surface p-0 overflow-hidden"
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }}>
-          <img src="/images/benefits-mobile.png" alt="Mobile" className="w-full h-full object-cover" loading="lazy" />
+          <img src="https://framerusercontent.com/images/ccp0pE8ilBYIbeVuKUhSOVV59A.jpg" alt="Mobile" className="w-full h-full object-cover" loading="lazy" />
         </motion.div>
       </div>
     </section>

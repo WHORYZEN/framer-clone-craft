@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const services = [
-  { img: "/images/service-glasses.png", title: "Social Media Marketing", tag: "Marketing" },
-  { img: "/images/service-coffee.png", title: "SEO & Performance", tag: "Optimization" },
-  { img: "/images/service-cream.png", title: "Website Development", tag: "Development" },
-  { img: "/images/service-bottle.png", title: "3D Animation & Branding", tag: "Branding" },
+  { img: "https://framerusercontent.com/images/vTF38nIULuOC9L0kUyVtYKOjxY.jpg", title: "Social Media Marketing", tag: "Marketing" },
+  { img: "https://framerusercontent.com/images/h2AhWtN9l4FSdpd8rdbtk5KLWk.jpg", title: "SEO & Performance", tag: "Optimization" },
+  { img: "https://framerusercontent.com/images/wSSi5QqI6FKfkpunJ76YhUf14.jpg", title: "Website Development", tag: "Development" },
+  { img: "https://framerusercontent.com/images/xc3JwQyNE0EcHd5xTwp27Ax5Cbs.jpg", title: "3D Animation & Branding", tag: "Branding" },
 ];
 
 const ServicesSection = () => {
@@ -39,7 +39,7 @@ const ServicesSection = () => {
       {/* Service image with full-width portrait */}
       <div className="relative mt-12">
         <div className="absolute right-0 top-0 bottom-0 w-1/3 overflow-hidden hidden lg:block">
-          <img src="/images/service-woman.png" alt="Services" className="w-full h-full object-cover object-top" loading="lazy" />
+          <img src="https://framerusercontent.com/images/vx8WxNyfbJ4SPAtU4jwNDArkh1Q.jpg" alt="Services" className="w-full h-full object-cover object-top" loading="lazy" />
         </div>
 
         <div className="px-8 md:px-12 lg:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-0 lg:w-2/3">

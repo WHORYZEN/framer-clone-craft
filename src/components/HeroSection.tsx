@@ -28,7 +28,7 @@ const HeroSection = () => {
         {/* Left: Image with parallax */}
         <div className="relative min-h-[60vh] lg:min-h-screen overflow-hidden">
           <motion.img
-            src="/images/hero-portrait.png"
+            src="https://framerusercontent.com/images/VRwQ9uHPGoSubtzvWBwjE2utUDU.jpg"
             alt="Creative portrait"
             className="absolute inset-0 w-full h-full object-cover object-top"
             style={{ y: imageY, scale: 1.1 }}
@@ -99,9 +99,9 @@ const HeroSection = () => {
       {/* Work showcase strip */}
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-keyline">
         {[
-          { src: "/images/work-fragrance.jpeg", alt: "Fragrance" },
-          { src: "/images/work-shoes.png", alt: "Shoes" },
-          { src: "/images/work-bag.png", alt: "Bag" },
+          { src: "https://framerusercontent.com/images/UKGJ4gmkBLqWP9b5Vv956x2SBUE.jpg", alt: "Fragrance" },
+          { src: "https://framerusercontent.com/images/ccp0pE8ilBYIbeVuKUhSOVV59A.jpg", alt: "Shoes" },
+          { src: "https://framerusercontent.com/images/icTEZPIceOE8cIBqYuyzrKolpA.jpg", alt: "Bag" },
         ].map((item, i) => (
           <motion.div key={item.alt} className="relative aspect-[4/3] overflow-hidden border-b md:border-b-0 md:border-r last:border-r-0 border-keyline photo-grid-item"
             initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}

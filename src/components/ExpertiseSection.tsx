@@ -8,7 +8,7 @@ const ExpertiseSection = () => {
         <motion.div className="relative min-h-[400px] lg:min-h-[600px] overflow-hidden"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
           viewport={{ once: true }} transition={{ duration: 1 }}>
-          <img src="/images/framer-expert.png" alt="Expert" className="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" />
+          <img src="https://framerusercontent.com/images/VRwQ9uHPGoSubtzvWBwjE2utUDU.jpg" alt="Expert" className="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" />
           <div className="absolute bottom-0 left-0 right-0 p-8" style={{ background: "linear-gradient(to top, hsl(0 0% 6.7%), transparent)" }}>
             <div className="flex items-center gap-4 mb-2">
               <span className="section-label">Web Development Experts</span>
@@ -37,7 +37,7 @@ const ExpertiseSection = () => {
 
             <div className="mt-10 flex items-center gap-3">
               <div className="flex -space-x-2">
-                {["/images/testimonial-1.jpg", "/images/testimonial-2.jpg", "/images/testimonial-3.jpg"].map((src, i) => (
+                {["https://framerusercontent.com/images/G3S93NVRBOPBVRHvuiD7v8mUec.jpg", "https://framerusercontent.com/images/AxkRNnDGOBIp7ssXlvfLRssOBsI.jpg", "https://framerusercontent.com/images/rIoYytoloWw5l32qBj1FRQtOUI.jpg"].map((src, i) => (
                   <img key={i} src={src} alt="User" className="w-8 h-8 border-2 object-cover" 
                     style={{ borderColor: "hsl(var(--background))" }} loading="lazy" />
                 ))}
