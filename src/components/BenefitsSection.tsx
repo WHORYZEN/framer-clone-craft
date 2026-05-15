@@ -21,7 +21,7 @@ const BenefitsSection = () => {
           </div>
           <div className="p-8">
             <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">
-              It takes <span className="text-accent">5.1</span> Minutes
+              It takes <span className="text-accent">30</span> Minutes
             </h3>
             <p className="body-text">to launch your site. Lightning-fast delivery without compromising quality</p>
           </div>
@@ -35,7 +35,7 @@ const BenefitsSection = () => {
             <p className="text-[10px] uppercase tracking-widest text-accent font-body mb-4">FROM 0 TO 100 IN ONE SMALL STEP</p>
             <h3 className="font-heading text-lg font-bold text-foreground">All in one platform</h3>
           </div>
-          <img src="https://framerusercontent.com/images/VJa2hrCQ3Nx82HOqQCvk8NvidY.jpg" alt="Platform" className="w-full mt-6 object-contain" loading="lazy" />
+          <img src="/platform.webp" alt="Platform" className="w-full mt-6 object-contain" loading="lazy" />
         </motion.div>
 
         {/* Card 3 - Support */}
