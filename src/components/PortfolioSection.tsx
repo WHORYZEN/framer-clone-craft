@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const projects = [
     { img: "/portfolio-myai500.png", title: "MYAI500", year: "2025", tags: ["Portfolio", "Doctors Saas Software"] },
-  { img: "https://framerusercontent.com/images/tTnUarcDGbJHyHnu6aahGScqPHw.jpg", title: "Willow Studio", year: "2024", tags: ["Photography", "Studio"] },
+  { img: "https://framerusercontent.com/images/tTnUarcDGbJHyHnu6aahGScqPHw.jpg", title: "MYNX Softwares Inc", year: "2024", tags: ["Photography", "Softwares Development"] },
    { img: "https://framerusercontent.com/images/taRJD9jIexSaQfL0zpQqcW0G3I.jpg", title: "Jouri Law", year: "2024", tags: ["Branding", "Logo Design"] },
    { img: "https://framerusercontent.com/images/vTF38nIULuOC9L0kUyVtYKOjxY.jpg", title: "Mystic Meadows", year: "2024", tags: ["Agency", "Marketing"] },
 ];
