@@ -20,7 +20,7 @@ const ServicesSection = () => {
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-4">
           <div>
-            <h2 className="heading-section text-foreground">Our Services®</h2>
+            <h2 className="heading-section text-foreground">Our Services</h2>
             <p className="body-text mt-4 max-w-lg">From social media to 3D branding, we bring your digital vision to life with precision and creativity</p>
           </div>
           <div className="flex flex-col gap-2">
