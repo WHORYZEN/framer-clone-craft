@@ -10,7 +10,7 @@ const services = [
     tag: "Marketing",
     description: "We craft scroll-stopping social strategies that build communities, drive engagement, and convert followers into loyal customers across every platform.",
     features: ["Content Strategy & Calendar", "Paid Ad Campaigns", "Community Management", "Analytics & Reporting"],
-    img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
+    img: "/services-marketing.jpg",
   },
   {
     title: "SEO & Performance",
