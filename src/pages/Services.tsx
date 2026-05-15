@@ -31,7 +31,7 @@ const services = [
     tag: "Branding",
     description: "Immersive 3D visuals and cohesive brand identities that set you apart from the competition and leave a lasting impression.",
     features: ["3D Product Rendering", "Motion Graphics", "Brand Identity Systems", "Visual Storytelling"],
-    img: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop",
+    img: "/services-branding.jpg",
   },
 ];
 
