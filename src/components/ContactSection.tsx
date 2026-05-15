@@ -4,6 +4,7 @@ import { z } from "zod";
 import { toast } from "sonner";
 
 const SUPPORT_EMAIL = "support@digifrenzy.com";
+const WEB3FORMS_ACCESS_KEY = "361d4c5a-21f6-46c9-91d0-d6045017fef5";
 
 const SERVICES = [
   "Social Media Marketing",
@@ -36,6 +37,7 @@ const initial: FormState = {
 const ContactSection = () => {
   const [data, setData] = useState<FormState>(initial);
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
+  const [submitting, setSubmitting] = useState(false);
 
   const update = <K extends keyof FormState>(key: K, value: FormState[K]) => {
     setData((d) => ({ ...d, [key]: value }));
@@ -48,7 +50,7 @@ const ContactSection = () => {
     update("services", next.join(", "));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const parsed = schema.safeParse(data);
     if (!parsed.success) {
@@ -62,18 +64,36 @@ const ContactSection = () => {
       return;
     }
 
-    const subject = `New enquiry from ${parsed.data.name} — ${parsed.data.businessName}`;
-    const body = [
-      `Name: ${parsed.data.name}`,
-      `Email: ${parsed.data.email}`,
-      `Mobile Number: ${parsed.data.mobile}`,
-      `Business Name: ${parsed.data.businessName}`,
-      `Business Type: ${parsed.data.businessType}`,
-      `Services Required: ${parsed.data.services}`,
-    ].join("\n");
-
-    window.location.href = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    toast.success("Opening your email client to send the enquiry…");
+    setSubmitting(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New enquiry from ${parsed.data.name} — ${parsed.data.businessName}`,
+          from_name: "DigiFrenzy Website",
+          replyto: parsed.data.email,
+          name: parsed.data.name,
+          email: parsed.data.email,
+          mobile: parsed.data.mobile,
+          business_name: parsed.data.businessName,
+          business_type: parsed.data.businessType,
+          services_required: parsed.data.services,
+        }),
+      });
+      const json = await res.json();
+      if (json.success) {
+        toast.success("Thanks! We'll be in touch shortly.");
+        setData(initial);
+      } else {
+        toast.error(json.message || "Something went wrong. Please try again.");
+      }
+    } catch {
+      toast.error("Network error. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const selected = data.services ? data.services.split(", ").filter(Boolean) : [];
@@ -181,13 +201,13 @@ const ContactSection = () => {
                   Available Worldwide
                 </span>
               </div>
-              <button type="submit" className="btn-primary text-xs inline-flex">
+              <button type="submit" disabled={submitting} className="btn-primary text-xs inline-flex disabled:opacity-60 disabled:cursor-not-allowed">
                 <span className="btn-icon">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
-                Send enquiry
+                {submitting ? "Sending…" : "Send enquiry"}
               </button>
             </div>
           </form>
