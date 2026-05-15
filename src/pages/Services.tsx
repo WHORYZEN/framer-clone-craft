@@ -24,7 +24,7 @@ const services = [
     tag: "Development",
     description: "Pixel-perfect, high-performance websites built with modern tech stacks that deliver exceptional user experiences and drive business results.",
      features: ["Custom Web Applications", "Doctors Saas Software Solutions", "Responsive Design", "CMS Integration"],
-    img: "/services-development.jpg",
+    img: "/services-development-updated.jpg",
   },
   {
     title: "3D Animation & Branding",
