@@ -1,26 +1,30 @@
-## Improve text readability across the site
+## Contact form + footer updates
 
-The current dark theme uses low-contrast text (`text-dim` 50% white, `text-dimmer` 30%, `muted-foreground` 40%) and small base body sizes. I'll bump opacity and sizing in the central design tokens in `src/index.css` so every section benefits without per-component edits.
+### 1. Contact form (home page `ContactSection`)
+Replace the current centered "Contact Now" card with a glass-surface form matching the existing dark theme (Inter Display headings, accent blue, glassmorphism, pill `btn-primary`).
 
-### Changes in `src/index.css`
+Fields (all required except where noted):
+- Name (text)
+- Email (email)
+- Mobile Number (tel)
+- Business Name (text)
+- Business Type (text)
+- Services Required (textarea, or multi-select of the 4 core services: Social Media Marketing, SEO & Performance, Web Development, 3D Animation & Branding)
 
-1. **Stronger text opacities** (better WCAG contrast on the dark background):
-   - `--muted-foreground`: 40% → 65%
-   - `--text-dim`: 50% → 75%
-   - `--text-dimmer`: 30% → 55%
-   - `--keyline`: 15% → 22% (subtle borders still visible)
+Submit behavior — needs your input (see questions below).
 
-2. **Larger, more legible body text**:
-   - `.body-text`: `text-sm md:text-base` → `text-base md:text-lg`, line-height bumped to `leading-[1.7]`
-   - `.body-large`: line-height `leading-[1.7]`
-   - Section paragraphs feel more like editorial copy.
+Validation: zod schema, inline error messages, toast on success/failure, disabled submit while sending.
 
-3. **Section labels & tags** more readable:
-   - `.section-label`: `text-xs` → `text-[13px]`, letter-spacing eased to `0.25em`, weight `font-semibold`
-   - `.section-tag`: `text-xs` → `text-[13px]`
+Keep the "24/7 Full Time Support" / "Available Worldwide" chips and the heading. Replace the single mailto button with the form + a "Send enquiry" submit button styled as `btn-primary`.
 
-4. **Sub-heading bump**: `.heading-sub` → `text-2xl md:text-3xl` so secondary headings don't get lost.
+### 2. Footer (`Footer.tsx`)
+- Remove the **Twitter** link from the social row (keep Instagram, LinkedIn).
+- Add `support@digifrenzy.com` as a visible mailto link in the footer (placed before the social links, styled with the same uppercase tracked-widest treatment).
 
-5. **Body font smoothing tweak**: add `letter-spacing: -0.005em` on body for cleaner Inter rendering at the new sizes.
+### Technical notes
+- Form built with react-hook-form + zod + existing shadcn `Form`, `Input`, `Textarea`, `Button` primitives, themed via design tokens (no raw colors).
+- Services Required: leaning toward a textarea for flexibility, but a checkbox group of the 4 services is also clean — see Q3.
+- No changes to other pages.
 
-No component files change — all updates are token/utility level so the visual rhythm stays consistent across Home, Services, and Pricing pages.
+### Open questions
+Before I implement, I need to confirm how enquiries should actually reach `support@digifrenzy.com`, since a static React app can't send email by itself.

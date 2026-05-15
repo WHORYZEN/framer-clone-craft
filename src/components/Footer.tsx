@@ -8,9 +8,19 @@ const Footer = () => {
           <img src={logo} alt="DigiFrenzy" className="h-6" />
         </a>
         <p className="text-xs text-text-dimmer font-body">© 2025 DigiFrenzy. All rights reserved.</p>
-        <div className="flex items-center gap-6">
-          {["Twitter", "Instagram", "LinkedIn"].map(s => (
-            <a key={s} href="#" className="text-xs text-text-dim hover:text-foreground transition-colors duration-300 font-body uppercase tracking-widest">
+        <div className="flex items-center gap-6 flex-wrap justify-center">
+          <a
+            href="mailto:support@digifrenzy.com"
+            className="text-xs text-text-dim hover:text-foreground transition-colors duration-300 font-body uppercase tracking-widest"
+          >
+            support@digifrenzy.com
+          </a>
+          {["Instagram", "LinkedIn"].map((s) => (
+            <a
+              key={s}
+              href="#"
+              className="text-xs text-text-dim hover:text-foreground transition-colors duration-300 font-body uppercase tracking-widest"
+            >
               {s}
             </a>
           ))}
