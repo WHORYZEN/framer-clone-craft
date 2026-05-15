@@ -54,7 +54,7 @@ const TestimonialsSection = () => {
                   <h4 className="font-heading text-sm font-bold text-foreground">{t.name}</h4>
                 </div>
               </div>
-              <p className="body-text text-sm leading-relaxed">"{t.text}"</p>
+              <p className="body-text text-sm leading-relaxed">{t.text}</p>
             </motion.div>
           ))}
         </div>
