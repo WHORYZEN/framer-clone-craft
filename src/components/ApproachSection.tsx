@@ -20,9 +20,9 @@ const ApproachSection = () => {
         <div className="p-8 md:p-12 lg:p-16">
           <div className="flex items-center gap-4 mb-4">
             <span className="section-label">Approach Style</span>
-            <span className="section-tag">(CQ® — 02)</span>
+            <span className="section-tag">​</span>
           </div>
-          <span className="section-tag">©2025</span>
+          <span className="section-tag">​</span>
 
           <div className="mt-12 space-y-10">
             {steps.map((step, i) => (

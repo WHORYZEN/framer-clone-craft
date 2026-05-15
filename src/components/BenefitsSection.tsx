@@ -6,9 +6,9 @@ const BenefitsSection = () => {
       <div className="px-8 md:px-12 lg:px-16">
         <div className="flex items-center gap-4 mb-2">
           <span className="section-label">Why Choose DigiFrenzy</span>
-          <span className="section-tag">(CQ® — 06)</span>
+          <span className="section-tag">​</span>
         </div>
-        <span className="section-tag mb-12 block">©2025</span>
+        <span className="section-tag mb-12 block">​</span>
       </div>
 
       <div className="px-8 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">

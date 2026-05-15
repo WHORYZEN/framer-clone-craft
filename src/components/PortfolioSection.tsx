@@ -13,14 +13,14 @@ const PortfolioSection = () => {
       <div className="px-8 md:px-12 lg:px-16">
         <div className="flex items-center gap-4 mb-2">
           <span className="section-label">Featured Works</span>
-          <span className="section-tag">(CQ® — 03)</span>
+          <span className="section-tag">​</span>
         </div>
-        <span className="section-tag">©2025</span>
+        <span className="section-tag">​</span>
 
         <div className="mt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
             <span className="section-label text-accent mb-2 block">Portfolio</span>
-            <h2 className="heading-section text-foreground">Featured Portfolio®</h2>
+            <h2 className="heading-section text-foreground">Featured Portfolio</h2>
           </div>
           <div className="max-w-md">
             <p className="body-text mb-6">
