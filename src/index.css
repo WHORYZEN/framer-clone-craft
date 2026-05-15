@@ -120,6 +120,23 @@
     border: 1px solid hsl(var(--keyline));
   }
 
+  .form-input {
+    @apply w-full px-4 py-3 text-sm rounded-md outline-none transition-all duration-300;
+    background: hsl(var(--surface-glass));
+    border: 1px solid hsl(var(--keyline));
+    color: hsl(var(--foreground));
+    font-family: var(--font-body);
+  }
+
+  .form-input::placeholder {
+    color: hsl(var(--text-dimmer));
+  }
+
+  .form-input:focus {
+    border-color: hsl(var(--accent));
+    background: hsl(var(--surface-glass-hover));
+  }
+
   .glass-surface-hover {
     background: hsl(var(--surface-glass));
     border: 1px solid hsl(var(--keyline));
