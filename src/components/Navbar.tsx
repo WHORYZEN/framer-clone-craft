@@ -9,7 +9,6 @@ const navItems = [
   { label: "Services", num: "03", href: "/services", isRoute: true },
   { label: "Pricing", num: "04", href: "/pricing", isRoute: true },
   { label: "Work", num: "05", href: "/#portfolio" },
-  { label: "Blog", num: "06", href: "/#blog" },
 ];
 
 const Navbar = () => {
