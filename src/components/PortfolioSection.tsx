@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const projects = [
     { img: "/portfolio-myai500.png", title: "MYAI500", year: "2025", tags: ["Portfolio", "Doctors Saas Software"] },
   { img: "/portfolio-mynx.png", title: "MYNX Softwares Inc", year: "2024", tags: ["IT Services", "Softwares Development"] },
-   { img: "https://framerusercontent.com/images/taRJD9jIexSaQfL0zpQqcW0G3I.jpg", title: "Jouri Law", year: "2024", tags: ["Accidents Cases", "Law Firm"] },
+   { img: "/portfolio-jouri-law.png", title: "Jouri Law", year: "2024", tags: ["Accidents Cases", "Law Firm"] },
     { img: "https://framerusercontent.com/images/vTF38nIULuOC9L0kUyVtYKOjxY.jpg", title: "MYCA500", year: "2024", tags: ["Doctors Saas Software", "Saas Product"] },
 ];
 
