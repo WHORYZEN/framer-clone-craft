@@ -12,7 +12,7 @@ const ExpertiseSection = () => {
           <div className="absolute bottom-0 left-0 right-0 p-8" style={{ background: "linear-gradient(to top, hsl(0 0% 6.7%), transparent)" }}>
             <div className="flex items-center gap-4 mb-2">
               <span className="section-label">Web Development Experts</span>
-              <span className="section-tag">(CQ® — 09)</span>
+              <span className="section-tag">​</span>
             </div>
             <span className="section-tag">​</span>
           </div>
