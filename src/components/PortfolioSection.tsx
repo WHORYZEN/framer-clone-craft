@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const projects = [
   { img: "https://framerusercontent.com/images/aIhvHr5AkuOOk6pZbiSHnTyM.jpg", title: "Raven Claw", year: "2025", tags: ["Portfolio", "E-Commerce"] },
   { img: "https://framerusercontent.com/images/tTnUarcDGbJHyHnu6aahGScqPHw.jpg", title: "Willow Studio", year: "2024", tags: ["Photography", "Studio"] },
-  { img: "https://framerusercontent.com/images/taRJD9jIexSaQfL0zpQqcW0G3I.jpg", title: "Maison Law", year: "2024", tags: ["Branding", "Logo Design"] },
+   { img: "https://framerusercontent.com/images/taRJD9jIexSaQfL0zpQqcW0G3I.jpg", title: "Jouri Law", year: "2024", tags: ["Branding", "Logo Design"] },
   { img: "https://framerusercontent.com/images/vTF38nIULuOC9L0kUyVtYKOjxY.jpg", title: "Mystic Meadows", year: "2023", tags: ["Agency", "Marketing"] },
 ];
 
