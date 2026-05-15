@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const testimonials = [
-  { img: "https://framerusercontent.com/images/G3S93NVRBOPBVRHvuiD7v8mUec.jpg", text: "With DigiFrenzy's user-friendly approach, our sales team can now work smarter, not harder. Strategy, reports, traffic — it's all streamlined and accessible in one place.", name: "Eddie Brock", role: "CEO", company: "Royal Kingdope" },
-  { img: "https://framerusercontent.com/images/AxkRNnDGOBIp7ssXlvfLRssOBsI.jpg", text: "I was amazed by how intuitive and results-driven their process was. It's clear the DigiFrenzy team obsesses over every detail to create experiences that delight.", name: "John Fitzgerald", role: "Manager", company: "Microsoft Solutions" },
-  { img: "https://framerusercontent.com/images/rIoYytoloWw5l32qBj1FRQtOUI.jpg", text: "We hired DigiFrenzy to redesign our company's website. The process was smooth and collaborative. They listened to all our needs and delivered a site that exceeded expectations.", name: "Ellie Sattler", role: "Designer", company: "Nvidia Graphics" },
-  { img: "https://framerusercontent.com/images/KWxDguvOOnQPeXxMf68OhIFwLY.jpg", text: "We've seen a massive increase in site traffic, lead generation, and sales. DigiFrenzy truly transformed our digital presence into a masterpiece!", name: "Kate McCallister", role: "Home Advisor", company: "Apple Inc." },
+  { img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&h=200&fit=crop", text: "Honestly, working with DigiFrenzy has been such a smooth ride. They actually listen, deliver on time, and the results speak for themselves. Our enquiries doubled in just two months.", name: "Aarav Sharma" },
+  { img: "https://images.unsplash.com/photo-1605405748313-a416a1b84491?w=200&h=200&fit=crop", text: "I was a bit unsure in the beginning, but the team handled everything so patiently. From content to ads, they took care of it all. Very happy with how our brand looks now.", name: "Priya Iyer" },
+  { img: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop", text: "These guys really know their stuff. The website they built for us is fast, clean, and our customers love it. Best decision we took this year for the business.", name: "Rohan Mehta" },
+  { img: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=200&h=200&fit=crop", text: "Loved the whole experience. They gave proper updates, never made us chase them, and the creatives were top-notch. Will definitely keep working with them long term.", name: "Ananya Reddy" },
 ];
 
 const TestimonialsSection = () => {
@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
             <span className="section-label text-accent mb-2 block">Testimonial</span>
-            <h2 className="heading-section text-foreground">Trusted By Experts.</h2>
+            <h2 className="heading-section text-foreground">Trusted By Many.</h2>
           </div>
           <div className="max-w-md">
             <p className="body-text mb-6">Real stories from real clients. See how our designs have transformed and elevated businesses.</p>
@@ -52,7 +52,6 @@ const TestimonialsSection = () => {
                 <img src={t.img} alt={t.name} className="w-12 h-12 object-cover" style={{ borderRadius: 0 }} loading="lazy" />
                 <div>
                   <h4 className="font-heading text-sm font-bold text-foreground">{t.name}</h4>
-                  <p className="text-[10px] text-text-dimmer font-body">{t.role} · {t.company}</p>
                 </div>
               </div>
               <p className="body-text text-sm leading-relaxed">"{t.text}"</p>
