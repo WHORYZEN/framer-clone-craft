@@ -4,8 +4,8 @@ import { useState } from "react";
 const testimonials = [
   { img: "/testimonials/aarav.jpg", text: "Honestly, working with DigiFrenzy has been such a smooth ride. They actually listen, deliver on time, and the results speak for themselves. Our enquiries doubled in just two months.", name: "Aarav Sharma" },
   { img: "/testimonials/priya.jpg", text: "I was a bit unsure in the beginning, but the team handled everything so patiently. From content to ads, they took care of it all. Very happy with how our brand looks now.", name: "Priya Iyer" },
-  { img: "/testimonials/rohan.jpg", text: "These guys really know their stuff. The website they built for us is fast, clean, and our customers love it. Best decision we took this year for the business.", name: "Rohan Mehta" },
-  { img: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=200&h=200&fit=crop", text: "Loved the whole experience. They gave proper updates, never made us chase them, and the creatives were top-notch. Will definitely keep working with them long term.", name: "Ananya Reddy" },
+   { img: "/client-avatar.jpg", text: "These guys really know their stuff. The website they built for us is fast, clean, and our customers love it. Best decision we took this year for the business.", name: "Rohan Mehta" },
+   { img: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=200&h=200&fit=crop", text: "Loved the whole experience. They gave proper updates, never made us chase them, and the creatives were top-notch. Will definitely keep working with them long term.", name: "Ananya Reddy" },
 ];
 
 const TestimonialsSection = () => {
