@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const services = [
   { img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop", title: "Social Media Marketing", tag: "Marketing" },
   { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", title: "SEO & Performance", tag: "Optimization" },
-  { img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop", title: "Website Development", tag: "Development" },
+  { img: "/services-development.jpg", title: "Website Development", tag: "Development" },
   { img: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop", title: "3D Animation & Branding", tag: "Branding" },
 ];
 
