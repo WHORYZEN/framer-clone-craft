@@ -14,7 +14,7 @@ const ExpertiseSection = () => {
               <span className="section-label">Web Development Experts</span>
               <span className="section-tag">(CQ® — 09)</span>
             </div>
-            <span className="section-tag">©2025</span>
+            <span className="section-tag">​</span>
           </div>
         </motion.div>
 
@@ -24,7 +24,7 @@ const ExpertiseSection = () => {
             viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="section-label text-accent mb-4 block">Website Expert</span>
             <h2 className="heading-section text-foreground mb-6">Expertise in Modern Web Development.</h2>
-            <h3 className="heading-sub text-foreground mb-4">Bringing Your Ideas to Life®</h3>
+            <h3 className="heading-sub text-foreground mb-4">Bringing Your Ideas to Life</h3>
             <p className="body-text mb-8">
               Our team specializes in turning your ideas into functional, high-performance websites. Whether it's a custom build or a template, we ensure every project meets your vision and exceeds expectations.
             </p>

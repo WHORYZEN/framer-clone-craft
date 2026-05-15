@@ -45,7 +45,7 @@ const HeroSection = () => {
             style={{ y: textY }}
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}>
-            <p className="section-tag mb-3">©2025</p>
+            <p className="section-tag mb-3">​</p>
             <h1 className="heading-display text-foreground">
               DigiFrenzy<span className="text-accent">*</span>
             </h1>

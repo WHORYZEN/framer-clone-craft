@@ -6,9 +6,9 @@ const ContactSection = () => {
       <div className="px-8 md:px-12 lg:px-16">
         <div className="flex items-center gap-4 mb-2">
           <span className="section-label">Let's Work Together</span>
-          <span className="section-tag">(CQ® — 13)</span>
+          <span className="section-tag">​</span>
         </div>
-        <span className="section-tag mb-12 block">©2025</span>
+        <span className="section-tag mb-12 block">​</span>
 
         <motion.div className="glass-surface p-8 md:p-16 text-center max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
