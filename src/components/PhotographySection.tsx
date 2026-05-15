@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const photos = [
-  { src: "/images/photo-water.png", alt: "Woman in water" },
-  { src: "/images/photo-car.png", alt: "Car" },
-  { src: "/images/photo-spray.png", alt: "Spray bottle" },
-  { src: "/images/photo-glass.png", alt: "Glass corridor" },
+  { src: "https://framerusercontent.com/images/vx8WxNyfbJ4SPAtU4jwNDArkh1Q.jpg", alt: "Woman in water" },
+  { src: "https://framerusercontent.com/images/h2AhWtN9l4FSdpd8rdbtk5KLWk.jpg", alt: "Car" },
+  { src: "https://framerusercontent.com/images/ccp0pE8ilBYIbeVuKUhSOVV59A.jpg", alt: "Spray bottle" },
+  { src: "https://framerusercontent.com/images/icTEZPIceOE8cIBqYuyzrKolpA.jpg", alt: "Glass corridor" },
 ];
 
 const PhotographySection = () => {

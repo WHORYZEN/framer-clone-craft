@@ -60,7 +60,7 @@ const FAQSection = () => {
         <motion.div className="relative min-h-[400px] overflow-hidden hidden lg:block"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
           viewport={{ once: true }} transition={{ duration: 1 }}>
-          <img src="/images/faq-woman.png" alt="FAQ" className="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" />
+          <img src="https://framerusercontent.com/images/rPovAy2J6Q4sllGf3hH7aT3fCk.jpg" alt="FAQ" className="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" />
         </motion.div>
       </div>
     </section>

@@ -10,28 +10,28 @@ const services = [
     tag: "Marketing",
     description: "We craft scroll-stopping social strategies that build communities, drive engagement, and convert followers into loyal customers across every platform.",
     features: ["Content Strategy & Calendar", "Paid Ad Campaigns", "Community Management", "Analytics & Reporting"],
-    img: "/images/service-glasses.png",
+    img: "https://framerusercontent.com/images/vTF38nIULuOC9L0kUyVtYKOjxY.jpg",
   },
   {
     title: "SEO & Performance",
     tag: "Optimization",
     description: "Data-driven SEO and performance optimization that puts your brand at the top of search results and keeps your site lightning fast.",
     features: ["Technical SEO Audits", "Keyword Research & Strategy", "On-Page Optimization", "Core Web Vitals"],
-    img: "/images/service-coffee.png",
+    img: "https://framerusercontent.com/images/h2AhWtN9l4FSdpd8rdbtk5KLWk.jpg",
   },
   {
     title: "Website Development",
     tag: "Development",
     description: "Pixel-perfect, high-performance websites built with modern tech stacks that deliver exceptional user experiences and drive business results.",
     features: ["Custom Web Applications", "E-Commerce Solutions", "Responsive Design", "CMS Integration"],
-    img: "/images/service-cream.png",
+    img: "https://framerusercontent.com/images/wSSi5QqI6FKfkpunJ76YhUf14.jpg",
   },
   {
     title: "3D Animation & Branding",
     tag: "Branding",
     description: "Immersive 3D visuals and cohesive brand identities that set you apart from the competition and leave a lasting impression.",
     features: ["3D Product Rendering", "Motion Graphics", "Brand Identity Systems", "Visual Storytelling"],
-    img: "/images/service-bottle.png",
+    img: "https://framerusercontent.com/images/xc3JwQyNE0EcHd5xTwp27Ax5Cbs.jpg",
   },
 ];
 

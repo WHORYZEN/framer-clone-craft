@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const posts = [
-  { img: "/images/blog-1.png", title: "Polestar New EV", date: "Mar 12, 2025", tag: "Launch Event" },
-  { img: "/images/blog-2.png", title: "Audemars Piguet", date: "Apr 1, 2024", tag: "Classic" },
-  { img: "/images/blog-3.png", title: "Global Nikon Meetup", date: "Sep 14, 2024", tag: "Photography" },
+  { img: "https://framerusercontent.com/images/UKGJ4gmkBLqWP9b5Vv956x2SBUE.jpg", title: "Polestar New EV", date: "Mar 12, 2025", tag: "Launch Event" },
+  { img: "https://framerusercontent.com/images/wSSi5QqI6FKfkpunJ76YhUf14.jpg", title: "Audemars Piguet", date: "Apr 1, 2024", tag: "Classic" },
+  { img: "https://framerusercontent.com/images/xc3JwQyNE0EcHd5xTwp27Ax5Cbs.jpg", title: "Global Nikon Meetup", date: "Sep 14, 2024", tag: "Photography" },
 ];
 
 const BlogSection = () => {

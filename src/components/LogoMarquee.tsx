@@ -1,9 +1,9 @@
 const logos = [
-  "/images/work-fragrance.jpeg",
-  "/images/work-shoes.png",
-  "/images/work-bag.png",
-  "/images/service-coffee.png",
-  "/images/service-cream.png",
+  "https://framerusercontent.com/images/UKGJ4gmkBLqWP9b5Vv956x2SBUE.jpg",
+  "https://framerusercontent.com/images/ccp0pE8ilBYIbeVuKUhSOVV59A.jpg",
+  "https://framerusercontent.com/images/icTEZPIceOE8cIBqYuyzrKolpA.jpg",
+  "https://framerusercontent.com/images/h2AhWtN9l4FSdpd8rdbtk5KLWk.jpg",
+  "https://framerusercontent.com/images/wSSi5QqI6FKfkpunJ76YhUf14.jpg",
 ];
 
 const LogoMarquee = () => {
