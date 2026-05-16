@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const plans = [
   {
-    price: "₹29,999",
+    price: "₹29,999/month",
     period: "/month + GST",
     name: "Starter Plan",
     badge: "MOST POPULAR",
