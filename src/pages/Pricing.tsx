@@ -12,10 +12,10 @@ const plans = [
     desc: "Perfect for startups and small businesses ready to establish a powerful digital presence.",
     features: [
       "Social Media Management (2 platforms)",
-      "Basic SEO Setup",
+      "Basic SEO Setup (On Page SEO)",
       "Monthly Performance Report",
       "Email Support",
-      "1 Graphic Design Request/week",
+      "4 Graphic Design Requests/week",
       "Pause or cancel anytime",
     ],
   },
@@ -29,8 +29,9 @@ const plans = [
       "Social Media (4 platforms)",
       "Advanced SEO & Content",
       "Website Maintenance",
-      "Paid Ad Management",
+      "Paid Ad Management (Meta + Google)",
       "Weekly Reports & Strategy Calls",
+      "10 Graphic Design Requests/week",
       "Pause or cancel anytime",
     ],
   },
@@ -40,12 +41,13 @@ const plans = [
     name: "Premium Plan",
     badge: null,
     desc: "The complete package for brands serious about dominating their industry online.",
+    includesPrevious: "Everything in Growth Plan, plus:",
     features: [
       "Full Digital Marketing Suite",
-      "3D Animation (1 video/month)",
-      "Social Media (2 platforms)",
+      "3D Animation (4 videos/month)",
       "Priority Support & Dedicated Manager",
-      "All Platforms + PR Strategy",
+      "All Platform Management + PR Strategy",
+      "Unlimited Graphic Design Requests/week",
       "Pause or cancel anytime",
     ],
   },
@@ -124,6 +126,9 @@ const Pricing = () => {
 
                 <div className="mt-auto">
                   <p className="text-[10px] uppercase tracking-widest text-text-dimmer font-body mb-4">What's included</p>
+                  {plan.includesPrevious && (
+                    <p className="text-xs text-accent font-body mb-3">{plan.includesPrevious}</p>
+                  )}
                   <ul className="space-y-3">
                     {plan.features.map((f) => (
                       <li key={f} className="flex items-center gap-3 text-sm text-text-dim font-body">
