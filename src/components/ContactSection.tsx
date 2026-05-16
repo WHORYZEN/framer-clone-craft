@@ -7,9 +7,8 @@ const SUPPORT_EMAIL = "support@digifrenzy.com";
 const WEB3FORMS_ACCESS_KEY = "361d4c5a-21f6-46c9-91d0-d6045017fef5";
 
 const SERVICES = [
-  "Social Media Marketing",
+  "Social Media (2 platforms)",
   "SEO & Performance",
-  "Website Development",
   "3D Animation & Branding",
   "Other",
 ];
