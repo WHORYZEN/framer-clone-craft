@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const plans = [
   {
     price: "₹29,999",
-    period: "/month",
+    period: "/month + GST",
     name: "Starter Plan",
     badge: "MOST POPULAR",
     desc: "Perfect for startups and small businesses ready to establish a powerful digital presence.",
@@ -18,7 +18,7 @@ const plans = [
   },
   {
     price: "₹49,999",
-    period: "/month",
+    period: "/month + GST",
     name: "Growth Plan",
     badge: null,
     desc: "Built for growing businesses that need full-spectrum digital marketing and web support.",
@@ -33,14 +33,13 @@ const plans = [
   },
   {
     price: "₹89,999",
-    period: "/month",
+    period: "/month + GST",
     name: "Premium Plan",
     badge: null,
     desc: "The complete package for brands serious about dominating their industry online.",
     features: [
       "Full Digital Marketing Suite",
       "3D Animation (1 video/month)",
-      "Custom Website Development",
       "Priority Support & Dedicated Manager",
       "All Platforms + PR Strategy",
       "Pause or cancel anytime",
