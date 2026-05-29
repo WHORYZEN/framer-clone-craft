@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -11,6 +12,7 @@ const services = [
     description: "We craft scroll-stopping social strategies that build communities, drive engagement, and convert followers into loyal customers across every platform.",
     features: ["Content Strategy & Calendar", "Paid Ad Campaigns", "Community Management", "Analytics & Reporting"],
     img: "/services-marketing.jpg",
+    href: "/services/social-media-marketing",
   },
   {
     title: "SEO & Performance",
@@ -18,6 +20,7 @@ const services = [
     description: "Data-driven SEO and performance optimization that puts your brand at the top of search results and keeps your site lightning fast.",
     features: ["Technical SEO Audits", "Keyword Research & Strategy", "On-Page Optimization", "Core Web Vitals"],
     img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    href: "/services/seo-performance",
   },
   {
     title: "Website Development",
@@ -25,6 +28,7 @@ const services = [
     description: "Pixel-perfect, high-performance websites built with modern tech stacks that deliver exceptional user experiences and drive business results.",
      features: ["Custom Web Applications", "Doctors Saas Software Solutions", "Responsive Design", "CMS Integration"],
     img: "/services-development-updated.jpg",
+    href: "/services/website-development",
   },
   {
     title: "3D Animation & Branding",
@@ -32,6 +36,7 @@ const services = [
     description: "Immersive 3D visuals and cohesive brand identities that set you apart from the competition and leave a lasting impression.",
     features: ["3D Product Rendering", "Motion Graphics", "Brand Identity Systems", "Visual Storytelling"],
     img: "/services-branding.jpg",
+    href: "/services/3d-animation-branding",
   },
 ];
 
@@ -106,14 +111,24 @@ const Services = () => {
                     ))}
                   </ul>
 
-                  <a href="#contact" className="btn-outline text-xs w-fit">
-                    <span className="btn-icon">
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                    Get started
-                  </a>
+                  <div className="flex flex-wrap gap-3">
+                    <Link to={service.href} className="btn-primary text-xs w-fit">
+                      <span className="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                          <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      Learn more
+                    </Link>
+                    <a href="#contact" className="btn-outline text-xs w-fit">
+                      <span className="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                          <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      Get started
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>
