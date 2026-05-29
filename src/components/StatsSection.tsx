@@ -34,7 +34,7 @@ const Counter = ({ target, suffix = "+" }: { target: number; suffix?: string }) 
 const stats = [
   { value: 10, suffix: "+", label: "Years in the Industry", desc: "Delivering digital excellence worldwide." },
   { value: 90, suffix: "+", label: "Projects Delivered", desc: "For clients across industries globally." },
-  { value: 30, suffix: "+", label: "Client Satisfaction", desc: "Consistently exceeding expectations." },
+  { value: 50, suffix: "+", label: "Client Satisfaction", desc: "Consistently exceeding expectations." },
 ];
 
 const StatsSection = () => {
