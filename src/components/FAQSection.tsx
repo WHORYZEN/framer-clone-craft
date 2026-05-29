@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-const faqs = [
+const defaultFaqs = [
   { q: "What does a project with DigiFrenzy look like?", a: "We start with a discovery call to understand your goals, then build a custom strategy, execute with our creative team, and deliver measurable results — all within clear timelines." },
   { q: "How is your pricing structured?", a: "We offer flexible monthly retainer plans and one-time project pricing. Every package is tailored to your specific business needs and goals." },
   { q: "Do you work with fixed-scope projects?", a: "Yes. We offer both fixed-scope and ongoing retainer models depending on what works best for your brand." },
@@ -12,7 +12,10 @@ const faqs = [
   { q: "Can I pause or cancel my plan?", a: "Yes. All our plans are flexible — pause or cancel anytime with 30 days notice." },
 ];
 
-const FAQSection = () => {
+type FAQ = { q: string; a: string };
+
+const FAQSection = ({ items }: { items?: FAQ[] }) => {
+  const faqs = items && items.length > 0 ? items : defaultFaqs;
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
