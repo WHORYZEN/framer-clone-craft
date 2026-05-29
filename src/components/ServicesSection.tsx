@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const services = [
-  { img: "/services-marketing.jpg", title: "Social Media Marketing", tag: "Marketing" },
-  { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", title: "SEO & Performance", tag: "Optimization" },
-  { img: "/services-development-updated.jpg", title: "Website Development", tag: "Development" },
-  { img: "/services-branding.jpg", title: "3D Animation & Branding", tag: "Branding" },
+  { img: "/services-marketing.jpg", title: "Social Media Marketing", tag: "Marketing", href: "/services/social-media-marketing" },
+  { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", title: "SEO & Performance", tag: "Optimization", href: "/services/seo-performance" },
+  { img: "/services-development-updated.jpg", title: "Website Development", tag: "Development", href: "/services/website-development" },
+  { img: "/services-branding.jpg", title: "3D Animation & Branding", tag: "Branding", href: "/services/3d-animation-branding" },
 ];
 
 const ServicesSection = () => {
@@ -45,24 +45,28 @@ const ServicesSection = () => {
         <div className="px-8 md:px-12 lg:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-0 lg:w-2/3">
           {services.map((service, i) => (
             <motion.div key={service.title}
-              className="glass-surface-hover lens-flare-card group cursor-pointer overflow-hidden"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              onMouseMove={(e) => {
-                const rect = e.currentTarget.getBoundingClientRect();
-                const x = ((e.clientX - rect.left) / rect.width) * 100;
-                e.currentTarget.style.setProperty("--mouse-x", `${x}%`);
-              }}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img src={service.img} alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
-              </div>
-              <div className="p-6">
-                <h3 className="font-heading text-base font-bold text-foreground mb-1">{service.title}</h3>
-                <span className="text-[10px] uppercase tracking-widest text-text-dimmer font-body">{service.tag}</span>
-              </div>
+              transition={{ duration: 0.6, delay: i * 0.1 }}>
+              <Link
+                to={service.href}
+                className="glass-surface-hover lens-flare-card group cursor-pointer overflow-hidden block"
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const x = ((e.clientX - rect.left) / rect.width) * 100;
+                  e.currentTarget.style.setProperty("--mouse-x", `${x}%`);
+                }}
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={service.img} alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-heading text-base font-bold text-foreground mb-1">{service.title}</h3>
+                  <span className="text-[10px] uppercase tracking-widest text-text-dimmer font-body">{service.tag}</span>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>
