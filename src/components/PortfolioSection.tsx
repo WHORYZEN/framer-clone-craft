@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const projects = [
-    { img: "/portfolio-myai500.png", title: "MYAI500", year: "2025", tags: ["Portfolio", "Doctors Saas Software"] },
+    { img: "/portfolio-myai500.png", title: "MYAI500", year: "2025", tags: ["Portfolio", "AI Voice Assistant"] },
   { img: "/portfolio-mynx.png", title: "MYNX Softwares Inc", year: "2024", tags: ["IT Services", "Softwares Development"] },
    { img: "/portfolio-jouri-law.png", title: "Jouri Law", year: "2024", tags: ["Accidents Cases", "Law Firm"] },
-    { img: "/portfolio-myca500.png", title: "MYCA500", year: "2024", tags: ["Doctors Saas Software", "Saas Product"] },
+    { img: "/portfolio-myca500.png", title: "MYCA500", year: "2024", tags: ["AI Voice Assistant", "Saas Product"] },
 ];
 
 const PortfolioSection = () => {
