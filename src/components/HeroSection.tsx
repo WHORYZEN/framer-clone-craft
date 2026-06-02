@@ -59,8 +59,8 @@ const HeroSection = () => {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         >
           <h1
-            className="font-heading font-extrabold uppercase tracking-[-0.04em] leading-[0.85] text-foreground"
-            style={{ fontSize: "clamp(3.5rem, 18vw, 22rem)" }}
+            className="font-heading font-extrabold uppercase tracking-[-0.05em] leading-[0.85] text-foreground whitespace-nowrap"
+            style={{ fontSize: "clamp(2.5rem, 13.5vw, 16rem)" }}
           >
             DigiFrenzy
             <sup className="text-accent align-super" style={{ fontSize: "0.3em", top: "-0.8em" }}>®</sup>
