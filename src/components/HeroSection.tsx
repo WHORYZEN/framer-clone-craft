@@ -52,7 +52,7 @@ const HeroSection = () => {
 
         {/* Wordmark */}
         <motion.div
-          className="relative z-10 px-6 md:px-10 lg:px-14 pt-32 md:pt-36"
+          className="relative z-10 px-6 md:px-10 lg:px-14 flex-1 flex flex-col justify-center"
           style={{ y: wordmarkY, opacity: wordmarkOpacity }}
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
