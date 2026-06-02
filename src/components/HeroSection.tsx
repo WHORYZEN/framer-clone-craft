@@ -62,7 +62,7 @@ const HeroSection = () => {
             className="font-heading font-extrabold uppercase tracking-[-0.05em] leading-[0.85] text-foreground whitespace-nowrap"
             style={{ fontSize: "clamp(2.5rem, 13.5vw, 16rem)" }}
           >
-            DigiFrenzy
+            Digi<span className="text-accent">Frenzy</span>
             <sup className="text-accent align-super" style={{ fontSize: "0.3em", top: "-0.8em" }}>®</sup>
           </h1>
           <div className="mt-4 flex items-center gap-3">
