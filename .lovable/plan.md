@@ -1,45 +1,29 @@
-## Goal
-Add four dedicated service pages, linked from the Services page cards, each following the existing dark DigiFrenzy theme with hero, content sections, CTA, contact form, and FAQs.
+# Hero Section Redesign (Agenzo-style)
 
-## New Routes
-- `/services/social-media-marketing`
-- `/services/seo-performance`
-- `/services/website-development`
-- `/services/3d-animation-branding`
+Rework `src/components/HeroSection.tsx` only. Keep the rest of the page (LogoMarquee, intro cards, work strip) intact by moving the non-hero blocks out of the hero or keeping them below.
 
-Registered in `src/App.tsx` above the catch-all route.
+## Layout changes
+- Remove the right blue (`hsl(var(--accent))`) panel and its "Welcome to DigiFrenzy / We are a full-service…" content + "Get in touch" button.
+- Make the hero a single full-bleed section using the existing background portrait image as a full-width backdrop (object-cover, centered). Keep current dark background/aurora as-is behind it.
+- Add a subtle dark gradient overlay on top of the image for text legibility (no color change to the page background).
+- Place a massive wordmark **DIGIFRENZY®** (using `*` replaced visually with the ® style superscript like Agenzo) left-aligned, vertically centered-ish, spanning most of the viewport width — similar scale/placement to "Agenzo®" in the reference.
+- Under the wordmark, add a small tag row: a short divider line + label `— DIGITAL AGENCY` (uppercase, tracked).
+- Bottom-left: short tagline paragraph (reuse current "we are a full-service digital agency…" copy, condensed) + two pill buttons: primary "View Our Work" (→ `#portfolio`) and outline/secondary "Contact Us" (→ `#contact`), styled with existing `.btn-primary` / `.btn-outline`.
+- Right edge: vertical "Scroll down" label with a thin animated line (decorative, like Agenzo).
+- Keep the existing intro-text two-card row and the 3-image work strip below the hero (unchanged).
 
-## Page Structure (consistent across all 4)
-1. **Navbar** (existing)
-2. **Hero** — section label `(DF® — Services / [Name])`, large display heading with accent asterisk, intro paragraph, primary CTA "Start a project" → `#contact`, secondary "View pricing" → `/pricing`. Hero image on right (reuse each service's existing image).
-3. **Overview / What we do** — 2-column: short narrative + key stat chips (e.g., engagement %, ROI multiplier).
-4. **What's Included** — glass cards grid of 6 deliverables specific to the service.
-5. **Our Process** — 4-step numbered timeline (Discover → Strategize → Execute → Optimize), themed per service.
-6. **Why DigiFrenzy** — 3 benefit cards (results, transparency, dedicated team).
-7. **Mid-page CTA band** — glass-surface block "Ready to grow?" with button to `#contact`.
-8. **FAQSection** (reuse existing component)
-9. **ContactSection** (reuse — anchor `#contact`)
-10. **Footer** (existing)
+## Scroll effects (framer-motion, matching example feel)
+- Background image: slow parallax translateY + slight scale on scroll (using `useScroll` + `useTransform`, already imported).
+- Wordmark: scroll-linked translateY upward and slight opacity fade as user scrolls past hero.
+- Tagline + buttons block: small translateY + opacity fade on scroll.
+- Vertical "Scroll down" line: height grows / indicator moves with `scrollYProgress`.
+- Initial entrance: wordmark letters fade+rise (stagger via simple motion variants), tagline/buttons fade-in delayed.
 
-All sections use existing tokens: `glass-surface`, `glass-surface-hover`, `lens-flare-card`, `aurora-glow`, `heading-display/section/sub`, `body-text`, `btn-primary`, `btn-outline`, `section-label`, `section-tag`, accent color. framer-motion fade/slide-in like other pages.
+## Styling / tokens
+- Use existing design tokens only (`--foreground`, `--background`, `--accent`, `--keyline`, `.heading-display`, `.btn-primary`, `.btn-outline`, `.section-tag`). No new colors.
+- Wordmark: extend `.heading-display` inline with `text-[18vw] leading-[0.85]` (or similar responsive clamp) so it scales like the reference. The `®` rendered as a smaller superscript in `--accent` color.
+- Ensure mobile: wordmark scales down gracefully, buttons stack, scroll indicator hidden on small screens.
 
-## Linking from Services Page
-Update `src/pages/Services.tsx` so each of the 4 service blocks gets a "Learn more" `btn-outline` link to its detail page (kept alongside the existing "Get started" anchor that scrolls to contact).
-
-Also update `src/components/ServicesSection.tsx` (Home) so each service card links to its detail page.
-
-## Per-Service Content Snapshot
-- **Social Media Marketing** — platforms (IG, FB, LinkedIn, X, YouTube), content calendar, paid ads, community mgmt, influencer collabs, analytics.
-- **SEO & Performance** — technical audit, keyword strategy, on-page, link building, Core Web Vitals, monthly reporting.
-- **Website Development** — custom React/Next builds, SaaS dashboards, CMS, e-commerce, responsive, maintenance.
-- **3D Animation & Branding** — 3D product renders, motion graphics, brand identity systems, explainer videos, visual storytelling.
-
-Each gets its own tailored FAQ entries handled in `FAQSection` (will accept an optional `items` prop) OR we keep the existing shared FAQ — see Decision below.
-
-## Files
-- New: `src/pages/services/SocialMedia.tsx`, `SEO.tsx`, `WebDevelopment.tsx`, `Animation.tsx` (or single template + config).
-- Edit: `src/App.tsx` (routes), `src/pages/Services.tsx` (Learn more links), `src/components/ServicesSection.tsx` (Home links), optionally `src/components/FAQSection.tsx` (accept items prop).
-
-## Decision needed
-1. Should each service page have its **own service-specific FAQs**, or reuse the standard shared FAQ section as-is?
-2. Use a **single shared template component** driven by a config object (less code, perfectly consistent) or **four separate page files** (easier to customize individually later)?
+## Out of scope
+- No changes to Navbar, other sections, routing, or design tokens.
+- Background page color and aurora glow remain exactly as today.
