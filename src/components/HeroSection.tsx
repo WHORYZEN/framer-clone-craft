@@ -17,62 +17,100 @@ const HeroSection = () => {
   });
 
   const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
-  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0, 0.4]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1.1, 1.18]);
+  const wordmarkY = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
+  const wordmarkOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0.2]);
+  const tagY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 0.6], [0.35, 0.7]);
+  const scrollLineScale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
 
   return (
     <section id="hero" ref={sectionRef} className="relative min-h-screen flex flex-col overflow-hidden">
       <div className="aurora-glow" />
-      
-      <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 relative z-10">
-        {/* Left: Image with parallax */}
-        <div className="relative min-h-[60vh] lg:min-h-screen overflow-hidden">
-          <motion.img
-            src="https://framerusercontent.com/images/VRwQ9uHPGoSubtzvWBwjE2utUDU.jpg"
-            alt="Creative portrait"
-            className="absolute inset-0 w-full h-full object-cover object-top"
-            style={{ y: imageY, scale: 1.1 }}
-            initial={{ scale: 1.2 }}
-            animate={{ scale: 1.1 }}
-            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
-          />
-          <motion.div 
-            className="absolute inset-0 bg-background" 
-            style={{ opacity: overlayOpacity }} 
-          />
-          
-          <motion.div className="absolute bottom-8 left-8 z-10"
-            style={{ y: textY }}
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}>
-            <p className="section-tag mb-3">​</p>
-            <h1 className="heading-display text-foreground">
-              DigiFrenzy<span className="text-accent">*</span>
-            </h1>
-          </motion.div>
-        </div>
 
-        {/* Right: Content with parallax */}
-        <div className="relative flex flex-col justify-between p-8 md:p-12 lg:p-16" 
-          style={{ background: "hsl(var(--accent))" }}>
-          
-          <motion.div className="flex-1 flex flex-col justify-center max-w-lg"
-            style={{ y: textY }}
-            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}>
-            <p className="text-sm uppercase tracking-[0.2em] mb-6 font-body"
-              style={{ color: "hsl(0 0% 0% / 0.5)" }}>
-              Welcome to DigiFrenzy
+      {/* Full-bleed hero */}
+      <div className="relative min-h-screen w-full overflow-hidden flex flex-col justify-between">
+        {/* Background image with parallax */}
+        <motion.img
+          src="https://framerusercontent.com/images/VRwQ9uHPGoSubtzvWBwjE2utUDU.jpg"
+          alt="Creative portrait"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{ y: imageY, scale: imageScale }}
+          initial={{ scale: 1.25, opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
+        />
+        {/* Dark overlay for legibility */}
+        <motion.div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            opacity: overlayOpacity,
+            background:
+              "linear-gradient(180deg, hsl(0 0% 0% / 0.55) 0%, hsl(0 0% 0% / 0.25) 40%, hsl(0 0% 0% / 0.75) 100%)",
+          }}
+        />
+
+        {/* Wordmark */}
+        <motion.div
+          className="relative z-10 px-6 md:px-10 lg:px-14 pt-32 md:pt-36"
+          style={{ y: wordmarkY, opacity: wordmarkOpacity }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+        >
+          <h1
+            className="font-heading font-extrabold uppercase tracking-[-0.04em] leading-[0.85] text-foreground"
+            style={{ fontSize: "clamp(3.5rem, 18vw, 22rem)" }}
+          >
+            DigiFrenzy
+            <sup className="text-accent align-super" style={{ fontSize: "0.3em", top: "-0.8em" }}>®</sup>
+          </h1>
+          <div className="mt-4 flex items-center gap-3">
+            <span className="block w-10 h-px bg-foreground/70" />
+            <span className="section-tag text-foreground/80">Digital Agency</span>
+          </div>
+        </motion.div>
+
+        {/* Bottom tagline + buttons */}
+        <motion.div
+          className="relative z-10 px-6 md:px-10 lg:px-14 pb-12 md:pb-16 max-w-3xl"
+          style={{ y: tagY }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
+        >
+          <div className="flex items-start gap-4 mb-8">
+            <span className="text-foreground/60 font-heading text-xl mt-1">/</span>
+            <p className="text-base md:text-lg text-foreground/85 leading-[1.6] max-w-xl">
+              We craft bold brands, high-performance websites, and data-driven marketing strategies that move the needle.
             </p>
-            <h2 className="font-heading text-2xl md:text-3xl font-bold leading-snug mb-8"
-              style={{ color: "hsl(0 0% 0% / 0.9)" }}>
-              We are a full-service digital agency crafting bold brands, high-performance websites, and data-driven marketing strategies.®
-            </h2>
-            <a href="#contact" className="btn-primary inline-flex w-fit">
+          </div>
+          <div className="flex flex-wrap items-center gap-3">
+            <a href="#portfolio" className="btn-primary inline-flex">
               <BtnIcon />
-              Get in touch
+              View Our Work
             </a>
-          </motion.div>
+            <a href="#contact" className="btn-outline inline-flex">
+              <BtnIcon />
+              Contact Us
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Vertical scroll indicator */}
+        <div className="hidden md:flex absolute right-6 lg:right-10 top-1/2 -translate-y-1/2 z-10 flex-col items-center gap-4">
+          <span
+            className="section-tag text-foreground/70"
+            style={{ writingMode: "vertical-rl" }}
+          >
+            Scroll down
+          </span>
+          <div className="relative w-px h-32 bg-foreground/15 overflow-hidden">
+            <motion.div
+              className="absolute inset-x-0 top-0 w-px bg-accent origin-top h-full"
+              style={{ scaleY: scrollLineScale }}
+            />
+          </div>
         </div>
       </div>
 
